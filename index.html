@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,152 @@
   </head>
 
   <body>
-    Hello world!
+    <header>
+      <div class="container">
+        <img
+          id="pfp"
+          src="./images/pfp_epita.jpg"
+          alt="photo de profil arthur lao"
+          width="50px"
+        />
+        <h1>Arthur Lao</h1>
+        <p>Étudiant en informatique à l'ESGI - En recherche d'alternance</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">À propos</a>
+            </li>
+            <li>
+              <a href="#skills">Compétences</a>
+            </li>
+            <li>
+              <a href="#projects">Projets</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="about">
+          <h1>À propos de moi</h1>
+          <div class="block">
+            <p>
+              Étant étudiant en première année en Bachelor Tronc Commun à
+              l'ESGI, je recherche un poste en alternance dans une entreprise
+              qui m'aidera au développement de mes compétences pratiques afin de
+              me préparer au monde professionnel.
+            </p>
+            <p>
+              Le monde de l'informatique me passionne, notamment les domaines du
+              développement (web, programmation) et de l'intelligence
+              artificielle dans lesquelles mes objectifs professionnels se
+              trouvent.
+            </p>
+          </div>
+        </section>
+        <section id="skills">
+          <h1>Mes compétences techniques</h1>
+          <div class="block-skills">
+            <h2>Langages de programmation</h2>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Javascript</li>
+              <li>SQL</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>Shell</li>
+            </ul>
+          </div>
+          <div class="block-skills">
+            <h2>Frontend</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="block-skills">
+            <h2>Outils</h2>
+            <ul>
+              <li>Git</li>
+              <li>Bash</li>
+              <li>Linux</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+          <div class="block-skills">
+            <h2>Pack Office</h2>
+            <ul>
+              <li>Excel</li>
+              <li>Powerpoint</li>
+              <li>Word</li>
+            </ul>
+          </div>
+        </section>
+        <section id="projects">
+          <h1>Mes projets</h1>
+          <div class="block-projects">
+            <h2>Réécriture de printf(3)</h2>
+            <p>une description du projet</p>
+          </div>
+        </section>
+        <section id="contact">
+          <h1>Me contacter</h1>
+          <div class="block">
+            <p>
+              N'hésitez pas à me contacter pour tout complément d'information.
+            </p>
+            <ul>
+              <li>
+                <a href="mailto:laoarthur613@gmail.com"
+                  >laoarthur613@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="files/CV_2025_Arthur_Lao.pdf" target="_blank">
+                  Curriculum vitae
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Lagaxyy" target="_blank">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/arthur-lao-080730388/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <div id="test">
+      <div id="output"></div>
+      <script>
+        var Module = {
+          print: function (text) {
+            document.getElementById("output").innerHTML += text + "<br>";
+          },
+          printErr: function (text) {
+            console.error(text);
+          },
+        };
+      </script>
+      <script src="hello.js"></script>
+    </div>
   </body>
 </html>
